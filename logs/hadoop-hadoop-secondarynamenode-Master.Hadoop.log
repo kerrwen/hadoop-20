@@ -1,0 +1,116 @@
+2016-03-31 14:50:35,173 INFO org.apache.hadoop.hdfs.DnsMonitorSecurityManager: checkConnect(host=Master.Hadoop, port=-1)
+2016-03-31 14:50:35,174 INFO org.apache.hadoop.hdfs.DnsMonitorSecurityManager: ------------------------------------
+Current stack trace:
+
+java.lang.Thread.getStackTrace(Thread.java:1552)
+org.apache.hadoop.hdfs.DFSUtil.getStackTrace(DFSUtil.java:946)
+org.apache.hadoop.hdfs.DnsMonitorSecurityManager.checkConnect(DnsMonitorSecurityManager.java:62)
+java.net.InetAddress.getLocalHost(InetAddress.java:1477)
+org.apache.hadoop.util.StringUtils.getHostname(StringUtils.java:568)
+org.apache.hadoop.util.StringUtils.startupShutdownMessage(StringUtils.java:595)
+org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.main(SecondaryNameNode.java:498)
+
+2016-03-31 14:50:35,182 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = Master.Hadoop/192.168.216.137
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20
+STARTUP_MSG:   build =  -r ; compiled by 'hadoop' on Thu Mar 31 14:42:44 CST 2016
+************************************************************/
+2016-03-31 14:50:35,370 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=SecondaryNameNode, sessionId=null
+2016-03-31 14:50:35,398 INFO org.apache.hadoop.hdfs.DnsMonitorSecurityManager: checkConnect(host=Master.Hadoop, port=-1)
+2016-03-31 14:50:35,401 INFO org.apache.hadoop.hdfs.DnsMonitorSecurityManager: ------------------------------------
+Current stack trace:
+
+java.lang.Thread.getStackTrace(Thread.java:1552)
+org.apache.hadoop.hdfs.DFSUtil.getStackTrace(DFSUtil.java:946)
+org.apache.hadoop.hdfs.DnsMonitorSecurityManager.checkConnect(DnsMonitorSecurityManager.java:62)
+java.net.InetAddress.getLocalHost(InetAddress.java:1477)
+org.apache.hadoop.metrics.MetricsUtil.getHostName(MetricsUtil.java:91)
+org.apache.hadoop.metrics.MetricsUtil.createRecord(MetricsUtil.java:80)
+org.apache.hadoop.metrics.jvm.JvmMetrics.<init>(JvmMetrics.java:82)
+org.apache.hadoop.metrics.jvm.JvmMetrics.init(JvmMetrics.java:73)
+org.apache.hadoop.metrics.jvm.JvmMetrics.init(JvmMetrics.java:60)
+org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.initialize(SecondaryNameNode.java:118)
+org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.<init>(SecondaryNameNode.java:96)
+org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.main(SecondaryNameNode.java:514)
+
+2016-03-31 14:50:35,526 WARN org.apache.hadoop.hdfs.server.namenode.NameNode: dfs.namenode.rpc-address isn't configured. falling back to fs.default.name (Deprecated)
+2016-03-31 14:50:35,999 WARN org.apache.hadoop.hdfs.server.common.Util: Path /home/hadoop/hadoop-20/tmp/dfs/namesecondary should be specified as a URI in configuration files. Please update hdfs configuration.
+2016-03-31 14:50:36,000 WARN org.apache.hadoop.hdfs.server.common.Util: Path /home/hadoop/hadoop-20/tmp/dfs/namesecondary should be specified as a URI in configuration files. Please update hdfs configuration.
+2016-03-31 14:50:36,046 WARN org.apache.hadoop.hdfs.server.common.Util: Path /home/hadoop/hadoop-20/tmp/dfs/name should be specified as a URI in configuration files. Please update hdfs configuration.
+2016-03-31 14:50:36,047 WARN org.apache.hadoop.hdfs.server.common.Util: Path /home/hadoop/hadoop-20/tmp/dfs/name should be specified as a URI in configuration files. Please update hdfs configuration.
+2016-03-31 14:50:36,108 ERROR org.apache.hadoop.hdfs.server.namenode.FSEditLog: No edits directories configured!
+2016-03-31 14:50:36,275 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-03-31 14:50:36,434 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2016-03-31 14:50:36,442 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50090
+2016-03-31 14:50:36,444 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50090 webServer.getConnectors()[0].getLocalPort() returned 50090
+2016-03-31 14:50:36,444 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
+2016-03-31 14:50:36,444 INFO org.mortbay.log: jetty-6.1.26.cloudera.1
+2016-03-31 14:50:37,364 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
+2016-03-31 14:50:37,364 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
+2016-03-31 14:50:37,364 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2016-03-31 14:50:37,364 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :671088 transactions 
+2016-03-31 14:50:37,376 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at Master.Hadoop/192.168.216.137
+************************************************************/
+2016-03-31 15:25:56,413 INFO org.apache.hadoop.hdfs.DnsMonitorSecurityManager: checkConnect(host=Master.Hadoop, port=-1)
+2016-03-31 15:25:56,417 INFO org.apache.hadoop.hdfs.DnsMonitorSecurityManager: ------------------------------------
+Current stack trace:
+
+java.lang.Thread.getStackTrace(Thread.java:1552)
+org.apache.hadoop.hdfs.DFSUtil.getStackTrace(DFSUtil.java:946)
+org.apache.hadoop.hdfs.DnsMonitorSecurityManager.checkConnect(DnsMonitorSecurityManager.java:62)
+java.net.InetAddress.getLocalHost(InetAddress.java:1477)
+org.apache.hadoop.util.StringUtils.getHostname(StringUtils.java:568)
+org.apache.hadoop.util.StringUtils.startupShutdownMessage(StringUtils.java:595)
+org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.main(SecondaryNameNode.java:498)
+
+2016-03-31 15:25:56,435 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = Master.Hadoop/192.168.216.137
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20
+STARTUP_MSG:   build =  -r ; compiled by 'hadoop' on Thu Mar 31 14:42:44 CST 2016
+************************************************************/
+2016-03-31 15:25:56,886 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=SecondaryNameNode, sessionId=null
+2016-03-31 15:25:57,022 INFO org.apache.hadoop.hdfs.DnsMonitorSecurityManager: checkConnect(host=Master.Hadoop, port=-1)
+2016-03-31 15:25:57,023 INFO org.apache.hadoop.hdfs.DnsMonitorSecurityManager: ------------------------------------
+Current stack trace:
+
+java.lang.Thread.getStackTrace(Thread.java:1552)
+org.apache.hadoop.hdfs.DFSUtil.getStackTrace(DFSUtil.java:946)
+org.apache.hadoop.hdfs.DnsMonitorSecurityManager.checkConnect(DnsMonitorSecurityManager.java:62)
+java.net.InetAddress.getLocalHost(InetAddress.java:1477)
+org.apache.hadoop.metrics.MetricsUtil.getHostName(MetricsUtil.java:91)
+org.apache.hadoop.metrics.MetricsUtil.createRecord(MetricsUtil.java:80)
+org.apache.hadoop.metrics.jvm.JvmMetrics.<init>(JvmMetrics.java:82)
+org.apache.hadoop.metrics.jvm.JvmMetrics.init(JvmMetrics.java:73)
+org.apache.hadoop.metrics.jvm.JvmMetrics.init(JvmMetrics.java:60)
+org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.initialize(SecondaryNameNode.java:118)
+org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.<init>(SecondaryNameNode.java:96)
+org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.main(SecondaryNameNode.java:514)
+
+2016-03-31 15:25:57,263 WARN org.apache.hadoop.hdfs.server.namenode.NameNode: dfs.namenode.rpc-address isn't configured. falling back to fs.default.name (Deprecated)
+2016-03-31 15:25:58,247 WARN org.apache.hadoop.hdfs.server.common.Util: Path /home/hadoop/hadoop-20/tmp/dfs/namesecondary should be specified as a URI in configuration files. Please update hdfs configuration.
+2016-03-31 15:25:58,249 WARN org.apache.hadoop.hdfs.server.common.Util: Path /home/hadoop/hadoop-20/tmp/dfs/namesecondary should be specified as a URI in configuration files. Please update hdfs configuration.
+2016-03-31 15:25:58,298 WARN org.apache.hadoop.hdfs.server.common.Util: Path /home/hadoop/hadoop-20/tmp/dfs/name should be specified as a URI in configuration files. Please update hdfs configuration.
+2016-03-31 15:25:58,302 WARN org.apache.hadoop.hdfs.server.common.Util: Path /home/hadoop/hadoop-20/tmp/dfs/name should be specified as a URI in configuration files. Please update hdfs configuration.
+2016-03-31 15:25:58,398 ERROR org.apache.hadoop.hdfs.server.namenode.FSEditLog: No edits directories configured!
+2016-03-31 15:25:58,556 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-03-31 15:25:58,703 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2016-03-31 15:25:58,711 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50090
+2016-03-31 15:25:58,718 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50090 webServer.getConnectors()[0].getLocalPort() returned 50090
+2016-03-31 15:25:58,718 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50090
+2016-03-31 15:25:58,718 INFO org.mortbay.log: jetty-6.1.26.cloudera.1
+2016-03-31 15:26:00,592 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50090
+2016-03-31 15:26:00,592 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Secondary Web-server up at: 0.0.0.0:50090
+2016-03-31 15:26:00,592 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2016-03-31 15:26:00,592 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :671088 transactions 
+2016-03-31 15:26:00,602 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at Master.Hadoop/192.168.216.137
+************************************************************/

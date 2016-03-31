@@ -1,0 +1,1766 @@
+2016-03-31 14:51:11,817 INFO org.apache.hadoop.raid.RaidNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting RaidNode
+STARTUP_MSG:   host = Master.Hadoop/192.168.216.137
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20
+STARTUP_MSG:   build =  -r ; compiled by 'hadoop' on Thu Mar 31 14:42:44 CST 2016
+************************************************************/
+2016-03-31 14:51:12,082 INFO org.apache.hadoop.raid.RaidNode: modTimePeriod: 0
+2016-03-31 14:51:12,100 WARN org.apache.hadoop.raid.RaidNode: Key raid.mapreduce.upload.classes is not defined
+2016-03-31 14:51:12,587 INFO org.apache.hadoop.conf.ClientConfigurationUtil: Client configuration lookup disabled/failed. Using default configuration
+2016-03-31 14:51:12,948 INFO org.apache.hadoop.raid.ConfigManager: Reloading config file /home/hadoop/hadoop-20/conf/raid.xml
+2016-03-31 14:51:12,972 INFO org.apache.hadoop.raid.ConfigManager: hadoop.srcReplication = 2
+2016-03-31 14:51:12,973 INFO org.apache.hadoop.raid.ConfigManager: hadoop.targetReplication = 2
+2016-03-31 14:51:12,973 INFO org.apache.hadoop.raid.ConfigManager: hadoop.metaReplication = 2
+2016-03-31 14:51:12,973 INFO org.apache.hadoop.raid.ConfigManager: hadoop.modTimePeriod = 0
+2016-03-31 14:51:12,973 INFO org.apache.hadoop.raid.ConfigManager: hadoop.codecId = xor
+2016-03-31 14:51:12,985 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=LocalRaidNode, port=60000
+2016-03-31 14:51:12,991 INFO org.apache.hadoop.ipc.Server: IPC SocketReader 0 on 60000: starting
+2016-03-31 14:51:13,049 INFO org.apache.hadoop.raid.LocalStripeStore: Load from /home/hadoop/hadoop-20/stripeStore
+2016-03-31 14:51:13,049 INFO org.apache.hadoop.raid.RaidNode: RaidNode up at: /127.0.0.1:60000
+2016-03-31 14:51:13,065 INFO org.apache.hadoop.raid.RaidNodeMetrics: RaidNode Metrics is initialized
+2016-03-31 14:51:13,066 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-03-31 14:51:13,067 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 60000: starting
+2016-03-31 14:51:13,069 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 60000: starting
+2016-03-31 14:51:13,069 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 60000: starting
+2016-03-31 14:51:13,069 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 60000: starting
+2016-03-31 14:51:13,070 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 60000: starting
+2016-03-31 14:51:13,070 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 60000: starting
+2016-03-31 14:51:13,070 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 60000: starting
+2016-03-31 14:51:13,071 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 60000: starting
+2016-03-31 14:51:13,071 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 60000: starting
+2016-03-31 14:51:13,071 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 60000: starting
+2016-03-31 14:51:13,079 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 60000: starting
+2016-03-31 14:51:13,103 INFO org.apache.hadoop.RaidShell: RaidShell connecting to localhost/127.0.0.1:60000
+2016-03-31 14:51:13,139 INFO org.apache.hadoop.RaidShell: RaidShell connecting to localhost/127.0.0.1:60000
+2016-03-31 14:51:13,140 INFO org.apache.hadoop.RaidShell: RaidShell connecting to localhost/127.0.0.1:60000
+2016-03-31 14:51:13,147 INFO org.apache.hadoop.raid.RaidNode: start dotriggerThread
+2016-03-31 14:51:13,147 INFO org.apache.hadoop.raid.LocalBlockIntegrityMonitor: LocalBlockFixer continuing to run...
+2016-03-31 14:51:13,147 INFO org.apache.hadoop.raid.RaidNode: start triggerThread
+2016-03-31 14:51:13,148 INFO org.apache.hadoop.raid.RaidNode: Start process doTriggerMonitor
+2016-03-31 14:51:13,148 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:51:13,158 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:51:13,158 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:51:13,183 INFO org.apache.hadoop.raid.RaidNode: Started archive scan
+2016-03-31 14:51:13,184 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /rack2/192.168.216.139:50010
+2016-03-31 14:51:13,184 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /rack1/192.168.216.138:50010
+2016-03-31 14:51:13,185 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /rack3/192.168.216.140:50010
+2016-03-31 14:51:13,215 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[] numThreads:4
+2016-03-31 14:51:13,224 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:51:13,236 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[] numThreads:4
+2016-03-31 14:51:13,249 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:51:13,249 INFO org.apache.hadoop.raid.StatisticsCollector: Finish collecting statistics for policy:hadoop
+xor Statistics
+RAIDED: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+NOT_RAIDED_TOO_NEW: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+NOT_RAIDED_TOO_SMALL: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+NOT_RAIDED_BUT_SHOULD: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+NOT_RAIDED_OTHER_POLICY: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+NOT_RAIDED_NO_POLICY: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+PARITY: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+
+2016-03-31 14:51:13,249 INFO org.apache.hadoop.raid.StatisticsCollector: Collecting parity statistics in /raid.
+2016-03-31 14:51:13,250 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:51:13,262 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:51:13,262 INFO org.apache.hadoop.raid.StatisticsCollector: Finish collecting statistics in /raid
+xor Statistics
+RAIDED: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+NOT_RAIDED_TOO_NEW: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+NOT_RAIDED_TOO_SMALL: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+NOT_RAIDED_BUT_SHOULD: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+NOT_RAIDED_OTHER_POLICY: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+NOT_RAIDED_NO_POLICY: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+PARITY: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+
+2016-03-31 14:51:13,267 INFO org.apache.hadoop.raid.StatisticsCollector: Finishing collecting statistics.
+2016-03-31 14:51:13,287 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-03-31 14:51:13,440 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2016-03-31 14:51:13,443 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50091
+2016-03-31 14:51:13,444 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50091 webServer.getConnectors()[0].getLocalPort() returned 50091
+2016-03-31 14:51:13,444 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50091
+2016-03-31 14:51:13,447 INFO org.mortbay.log: jetty-6.1.26.cloudera.1
+2016-03-31 14:51:14,047 INFO org.mortbay.log: Started SelectChannelConnector@127.0.0.1:50091
+2016-03-31 14:51:14,047 INFO org.apache.hadoop.raid.RaidNode: Web server started at port 50091
+2016-03-31 14:51:14,054 INFO org.apache.hadoop.raid.RaidNode: Registered RaidNodeStatusMBean
+2016-03-31 14:51:23,152 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:51:23,159 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:51:23,159 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:51:23,172 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:51:23,172 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:51:23,180 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:51:23,185 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:51:33,153 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:51:33,159 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:51:33,159 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:51:33,186 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:51:33,186 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:51:33,190 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:51:33,192 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:51:43,154 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:51:43,160 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:51:43,160 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:51:43,193 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:51:43,193 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:51:43,208 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:51:43,209 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:51:53,154 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:51:53,160 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:51:53,160 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:51:53,210 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:51:53,210 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:51:53,216 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:51:53,218 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:52:03,156 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:52:03,160 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:52:03,160 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:52:03,219 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:52:03,219 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:52:03,224 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:52:03,226 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:52:13,157 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:52:13,161 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:52:13,161 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:52:13,228 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:52:13,228 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:52:13,235 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:52:13,237 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:52:23,158 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:52:23,161 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:52:23,161 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:52:23,239 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:52:23,239 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:52:23,249 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:52:23,251 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:52:33,160 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:52:33,163 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:52:33,163 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:52:33,252 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:52:33,252 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:52:33,259 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:52:33,260 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:52:43,163 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:52:43,163 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:52:43,163 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:52:43,261 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:52:43,261 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:52:43,266 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:52:43,267 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:52:53,165 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:52:53,166 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:52:53,166 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:52:53,268 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:52:53,269 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:52:53,303 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:52:53,306 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:53:03,167 INFO org.apache.hadoop.raid.RaidNode: raidflag=true,notify the thread
+2016-03-31 14:53:03,167 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:53:03,167 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:53:03,167 INFO org.apache.hadoop.raid.RaidNode: get the flag
+2016-03-31 14:53:03,167 INFO org.apache.hadoop.raid.RaidNode: TriggerMonitor.doProcess 1
+2016-03-31 14:53:03,168 INFO org.apache.hadoop.raid.RaidNode: Triggering Policy Filter hadoop hdfs://192.168.216.137:9000/user/hadoop/input
+2016-03-31 14:53:03,168 INFO org.apache.hadoop.raid.RaidNode: Start new traversal for policy hadoop
+2016-03-31 14:53:03,183 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[hdfs://Master.Hadoop:9000/user/hadoop/input] numThreads:4
+2016-03-31 14:53:03,218 INFO org.apache.hadoop.conf.ClientConfigurationUtil: Client configuration lookup disabled/failed. Using default configuration
+2016-03-31 14:53:03,247 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:53:03,247 INFO org.apache.hadoop.raid.RaidNode: Triggering Policy Action hadoop 1 files
+2016-03-31 14:53:03,271 INFO org.apache.hadoop.raid.XORCode: Initialized class org.apache.hadoop.raid.XORCode stripeLength:5 parityLength:1
+2016-03-31 14:53:03,306 INFO org.apache.hadoop.raid.LocalStripeStore: Load from /home/hadoop/hadoop-20/stripeStore
+2016-03-31 14:53:03,307 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:53:03,309 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:53:03,329 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:53:03,331 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:53:03,431 INFO org.apache.hadoop.raid.Encoder: Encoding partial parity /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407165935_1_1459407183249.3419036205498491430/tmp/0
+2016-03-31 14:53:03,456 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-03-31 14:53:03,570 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:0
+2016-03-31 14:53:03,581 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:1048576
+2016-03-31 14:53:03,589 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:2097152
+2016-03-31 14:53:03,602 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:3145728
+2016-03-31 14:53:03,607 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:4194304
+2016-03-31 14:53:04,274 INFO org.apache.hadoop.raid.ParallelStreamReader: Shutting down parallel stream reader
+2016-03-31 14:53:04,558 INFO org.apache.hadoop.raid.Encoder: Wrote temp parity file /tmp/raid/localRaid2016-03-31-14-53-03-322/input-8300040226344793961
+2016-03-31 14:53:04,604 INFO org.apache.hadoop.raid.Encoder: renamed /tmp/raid/localRaid2016-03-31-14-53-03-322/input-8300040226344793961 to /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407165935_1_1459407183249.3419036205498491430/tmp/0
+2016-03-31 14:53:04,604 INFO org.apache.hadoop.fs.FileSystem: File /tmp/raid/localRaid2016-03-31-14-53-03-322/input-8300040226344793961 is being deleted only through Trash.
+2016-03-31 14:53:04,608 INFO org.apache.hadoop.raid.Encoder: Encoded partial parity /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407165935_1_1459407183249.3419036205498491430/tmp/0
+2016-03-31 14:53:06,283 INFO org.apache.hadoop.raid.Encoder: Number of partial files in the directory /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407165935_1_1459407183249.3419036205498491430/tmp is 1. It's different from expected number 2
+2016-03-31 14:53:06,283 INFO org.apache.hadoop.raid.RaidNode: RAID statistics  numProcessedBlocks = 7 processedSize = 14112666 postRaidSize = 0 numMetaBlocks = 0 metaSize = 0 %save in raw disk space = 100
+2016-03-31 14:53:06,288 INFO org.apache.hadoop.raid.XORCode: Initialized class org.apache.hadoop.raid.XORCode stripeLength:5 parityLength:1
+2016-03-31 14:53:06,316 INFO org.apache.hadoop.raid.LocalStripeStore: Load from /home/hadoop/hadoop-20/stripeStore
+2016-03-31 14:53:06,328 INFO org.apache.hadoop.raid.Encoder: Encoding partial parity /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407165935_1_1459407183249.3419036205498491430/tmp/1
+2016-03-31 14:53:06,344 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:5242880
+2016-03-31 14:53:06,349 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:6291456
+2016-03-31 14:53:06,349 INFO org.apache.hadoop.raid.StripeReader: Using zeros at block 2
+2016-03-31 14:53:06,350 INFO org.apache.hadoop.raid.StripeReader: Using zeros at block 3
+2016-03-31 14:53:06,350 INFO org.apache.hadoop.raid.StripeReader: Using zeros at block 4
+2016-03-31 14:53:06,636 INFO org.apache.hadoop.raid.ParallelStreamReader: Shutting down parallel stream reader
+2016-03-31 14:53:06,774 INFO org.apache.hadoop.raid.Encoder: Wrote temp parity file /tmp/raid/localRaid2016-03-31-14-53-03-322/input-8397900563323463338
+2016-03-31 14:53:06,776 INFO org.apache.hadoop.raid.Encoder: renamed /tmp/raid/localRaid2016-03-31-14-53-03-322/input-8397900563323463338 to /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407165935_1_1459407183249.3419036205498491430/tmp/1
+2016-03-31 14:53:06,776 INFO org.apache.hadoop.fs.FileSystem: File /tmp/raid/localRaid2016-03-31-14-53-03-322/input-8397900563323463338 is being deleted only through Trash.
+2016-03-31 14:53:06,779 INFO org.apache.hadoop.raid.Encoder: Encoded partial parity /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407165935_1_1459407183249.3419036205498491430/tmp/1
+2016-03-31 14:53:06,799 INFO org.apache.hadoop.raid.Encoder: Renamed /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407165935_1_1459407183249.3419036205498491430/tmp to /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407165935_1_1459407183249.3419036205498491430/final
+2016-03-31 14:53:06,814 INFO org.apache.hadoop.raid.Encoder: Concated 2 files into hdfs://Master.Hadoop:9000/tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407165935_1_1459407183249.3419036205498491430/final/0
+2016-03-31 14:53:06,932 INFO org.apache.hadoop.raid.Encoder: Wrote parity file /raid/user/hadoop/input
+2016-03-31 14:53:07,147 INFO org.apache.hadoop.raid.LocalStripeStore:  Put xor null parity blocks: blk_-6095451989534836438_1002 source blocks: blk_-77482294593883422_1001 blk_-1151519280884766990_1001 blk_-5451445174149223534_1001 blk_-3760156498359052304_1001 blk_-1165777510887863397_1001
+2016-03-31 14:53:07,195 INFO org.apache.hadoop.raid.LocalStripeStore:  Put xor null parity blocks: blk_-7974048495396082776_1003 source blocks: blk_-1263981262745365494_1001 blk_-5095307487532470347_1001
+2016-03-31 14:53:07,195 INFO org.apache.hadoop.raid.Encoder: Wrote stripe information into stripe store
+2016-03-31 14:53:07,195 INFO org.apache.hadoop.fs.FileSystem: File /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407165935_1_1459407183249.3419036205498491430 is being deleted only through Trash.
+2016-03-31 14:53:07,234 INFO org.apache.hadoop.raid.RaidNode: Source file hdfs://Master.Hadoop:9000/user/hadoop/input of size 0 Parity file /raid/user/hadoop/input of size 2097152 src mtime 1459407165935 parity mtime 1459407165935
+2016-03-31 14:53:07,248 INFO RaidMetrics: {"normal":{"Path":"hdfs://Master.Hadoop:9000/user/hadoop/input","Type":"ENCODING","Cluster":"Master.Hadoop:9000","Code":"xor","Result":"SUCCESS"},"int":{"ReadBlocks":14,"MetaBytes":4194304,"MetaBlocks":4,"SavingBytes":9918362,"ReadBytes":28225332,"time":1459407187,"Delay":955}}
+2016-03-31 14:53:07,248 INFO org.apache.hadoop.raid.RaidNode: RAID statistics  numProcessedBlocks = 14 processedSize = 28225332 postRaidSize = 14112666 numMetaBlocks = 4 metaSize = 4194304 %save in raw disk space = 35
+2016-03-31 14:53:07,249 INFO org.apache.hadoop.raid.RaidNode: finish raid the file
+2016-03-31 14:53:07,249 INFO org.apache.hadoop.raid.RaidNode: Start process doTriggerMonitor
+2016-03-31 14:53:07,250 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:53:13,168 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:53:13,168 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:53:13,331 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:53:13,331 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:53:13,350 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:53:13,351 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:53:13,352 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:53:13,384 INFO org.apache.hadoop.fs.FileSystem: File /raid/user/hadoop/input is being deleted only through Trash.
+2016-03-31 14:53:13,395 INFO org.apache.hadoop.raid.PurgeMonitor: Purging hdfs://Master.Hadoop:9000/raid/user/hadoop/input, recursive=false
+2016-03-31 14:53:13,396 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:53:13,396 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:53:17,251 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:53:23,168 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:53:23,168 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:53:23,396 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:53:23,397 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:53:23,415 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:53:23,418 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:53:23,418 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:53:23,441 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:53:23,441 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:53:27,251 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:53:33,169 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:53:33,169 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:53:33,459 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:53:33,459 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:53:33,504 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:53:33,507 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:53:33,507 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:53:33,527 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:53:33,528 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:53:37,254 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:53:43,169 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:53:43,169 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:53:43,528 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:53:43,528 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:53:43,573 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:53:43,578 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:53:43,578 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:53:43,609 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:53:43,610 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:53:47,254 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:53:53,169 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:53:53,170 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:53:53,611 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:53:53,611 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:53:53,638 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:53:53,643 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:53:53,643 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:53:53,667 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:53:53,667 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:53:57,258 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:54:03,170 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:54:03,170 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:54:03,668 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:54:03,668 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:54:03,698 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:54:03,699 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:54:03,699 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:54:03,728 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:54:03,728 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:54:07,259 INFO org.apache.hadoop.raid.RaidNode: raidflag=true,notify the thread
+2016-03-31 14:54:07,260 INFO org.apache.hadoop.raid.RaidNode: Trigger thread continuing to run...
+2016-03-31 14:54:07,260 INFO org.apache.hadoop.raid.RaidNode: get the flag
+2016-03-31 14:54:07,260 INFO org.apache.hadoop.raid.RaidNode: TriggerMonitor.doProcess 1
+2016-03-31 14:54:07,260 INFO org.apache.hadoop.raid.RaidNode: Triggering Policy Filter hadoop hdfs://192.168.216.137:9000/user/hadoop/input
+2016-03-31 14:54:07,260 INFO org.apache.hadoop.raid.RaidNode: Start new traversal for policy hadoop
+2016-03-31 14:54:07,266 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[hdfs://Master.Hadoop:9000/user/hadoop/input] numThreads:4
+2016-03-31 14:54:07,295 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:54:07,295 INFO org.apache.hadoop.raid.RaidNode: Triggering Policy Action hadoop 1 files
+2016-03-31 14:54:07,307 INFO org.apache.hadoop.raid.XORCode: Initialized class org.apache.hadoop.raid.XORCode stripeLength:5 parityLength:1
+2016-03-31 14:54:07,359 INFO org.apache.hadoop.raid.LocalStripeStore: Load from /home/hadoop/hadoop-20/stripeStore
+2016-03-31 14:54:07,372 INFO org.apache.hadoop.raid.Encoder: Encoding partial parity /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407231284_1_1459407247298.5599075461154233142/tmp/0
+2016-03-31 14:54:07,414 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:0
+2016-03-31 14:54:07,417 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:1048576
+2016-03-31 14:54:07,431 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:2097152
+2016-03-31 14:54:07,438 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:3145728
+2016-03-31 14:54:07,443 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:4194304
+2016-03-31 14:54:07,782 INFO org.apache.hadoop.raid.ParallelStreamReader: Shutting down parallel stream reader
+2016-03-31 14:54:07,944 INFO org.apache.hadoop.raid.Encoder: Wrote temp parity file /tmp/raid/localRaid2016-03-31-14-53-03-322/input1249443455201432546
+2016-03-31 14:54:07,951 INFO org.apache.hadoop.raid.Encoder: renamed /tmp/raid/localRaid2016-03-31-14-53-03-322/input1249443455201432546 to /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407231284_1_1459407247298.5599075461154233142/tmp/0
+2016-03-31 14:54:07,951 INFO org.apache.hadoop.fs.FileSystem: File /tmp/raid/localRaid2016-03-31-14-53-03-322/input1249443455201432546 is being deleted only through Trash.
+2016-03-31 14:54:07,953 INFO org.apache.hadoop.raid.Encoder: Encoded partial parity /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407231284_1_1459407247298.5599075461154233142/tmp/0
+2016-03-31 14:54:08,389 INFO org.apache.hadoop.raid.Encoder: Number of partial files in the directory /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407231284_1_1459407247298.5599075461154233142/tmp is 1. It's different from expected number 3
+2016-03-31 14:54:08,389 INFO org.apache.hadoop.raid.RaidNode: RAID statistics  numProcessedBlocks = 14 processedSize = 27246082 postRaidSize = 0 numMetaBlocks = 0 metaSize = 0 %save in raw disk space = 100
+2016-03-31 14:54:08,396 INFO org.apache.hadoop.raid.XORCode: Initialized class org.apache.hadoop.raid.XORCode stripeLength:5 parityLength:1
+2016-03-31 14:54:08,449 INFO org.apache.hadoop.raid.LocalStripeStore: Load from /home/hadoop/hadoop-20/stripeStore
+2016-03-31 14:54:08,481 INFO org.apache.hadoop.raid.Encoder: Encoding partial parity /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407231284_1_1459407247298.5599075461154233142/tmp/1
+2016-03-31 14:54:08,503 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:5242880
+2016-03-31 14:54:08,506 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:6291456
+2016-03-31 14:54:08,508 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:0
+2016-03-31 14:54:08,522 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:1048576
+2016-03-31 14:54:08,531 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:2097152
+2016-03-31 14:54:08,909 INFO org.apache.hadoop.raid.ParallelStreamReader: Shutting down parallel stream reader
+2016-03-31 14:54:09,481 INFO org.apache.hadoop.raid.Encoder: Wrote temp parity file /tmp/raid/localRaid2016-03-31-14-53-03-322/input1076587008764038016
+2016-03-31 14:54:09,485 INFO org.apache.hadoop.raid.Encoder: renamed /tmp/raid/localRaid2016-03-31-14-53-03-322/input1076587008764038016 to /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407231284_1_1459407247298.5599075461154233142/tmp/1
+2016-03-31 14:54:09,485 INFO org.apache.hadoop.fs.FileSystem: File /tmp/raid/localRaid2016-03-31-14-53-03-322/input1076587008764038016 is being deleted only through Trash.
+2016-03-31 14:54:09,490 INFO org.apache.hadoop.raid.Encoder: Encoded partial parity /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407231284_1_1459407247298.5599075461154233142/tmp/1
+2016-03-31 14:54:11,051 INFO org.apache.hadoop.raid.Encoder: Number of partial files in the directory /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407231284_1_1459407247298.5599075461154233142/tmp is 2. It's different from expected number 3
+2016-03-31 14:54:11,058 INFO org.apache.hadoop.raid.XORCode: Initialized class org.apache.hadoop.raid.XORCode stripeLength:5 parityLength:1
+2016-03-31 14:54:11,176 INFO org.apache.hadoop.raid.LocalStripeStore: Load from /home/hadoop/hadoop-20/stripeStore
+2016-03-31 14:54:11,211 INFO org.apache.hadoop.raid.Encoder: Encoding partial parity /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407231284_1_1459407247298.5599075461154233142/tmp/2
+2016-03-31 14:54:11,289 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:3145728
+2016-03-31 14:54:11,305 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:4194304
+2016-03-31 14:54:11,311 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:5242880
+2016-03-31 14:54:11,329 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:6291456
+2016-03-31 14:54:11,329 INFO org.apache.hadoop.raid.StripeReader: Using zeros at block 4
+2016-03-31 14:54:11,771 INFO org.apache.hadoop.raid.ParallelStreamReader: Shutting down parallel stream reader
+2016-03-31 14:54:11,973 INFO org.apache.hadoop.raid.Encoder: Wrote temp parity file /tmp/raid/localRaid2016-03-31-14-53-03-322/input6492895164477536585
+2016-03-31 14:54:11,999 INFO org.apache.hadoop.raid.Encoder: renamed /tmp/raid/localRaid2016-03-31-14-53-03-322/input6492895164477536585 to /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407231284_1_1459407247298.5599075461154233142/tmp/2
+2016-03-31 14:54:12,025 INFO org.apache.hadoop.fs.FileSystem: File /tmp/raid/localRaid2016-03-31-14-53-03-322/input6492895164477536585 is being deleted only through Trash.
+2016-03-31 14:54:12,035 INFO org.apache.hadoop.raid.Encoder: Encoded partial parity /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407231284_1_1459407247298.5599075461154233142/tmp/2
+2016-03-31 14:54:12,064 INFO org.apache.hadoop.raid.Encoder: Renamed /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407231284_1_1459407247298.5599075461154233142/tmp to /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407231284_1_1459407247298.5599075461154233142/final
+2016-03-31 14:54:12,082 INFO org.apache.hadoop.raid.Encoder: Concated 3 files into hdfs://Master.Hadoop:9000/tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407231284_1_1459407247298.5599075461154233142/final/0
+2016-03-31 14:54:12,142 INFO org.apache.hadoop.raid.Encoder: Wrote parity file /raid/user/hadoop/input
+2016-03-31 14:54:12,417 INFO org.apache.hadoop.raid.LocalStripeStore:  Put xor null parity blocks: blk_-5027655146050917850_1005 source blocks: blk_-4445731439915637834_1004 blk_-8123922764451860906_1004 blk_-9136981098609229171_1004 blk_-4969685274478596987_1004 blk_-8408927363542348737_1004
+2016-03-31 14:54:12,644 INFO org.apache.hadoop.raid.LocalStripeStore:  Put xor null parity blocks: blk_-2277687082651176475_1006 source blocks: blk_-3108600246303975102_1004 blk_-2123177147581173014_1004 blk_-77482294593883422_1001 blk_-1151519280884766990_1001 blk_-5451445174149223534_1001
+2016-03-31 14:54:12,727 INFO org.apache.hadoop.raid.LocalStripeStore:  Put xor null parity blocks: blk_-5839468798592122196_1007 source blocks: blk_-3760156498359052304_1001 blk_-1165777510887863397_1001 blk_-1263981262745365494_1001 blk_-5095307487532470347_1001
+2016-03-31 14:54:12,727 INFO org.apache.hadoop.raid.Encoder: Wrote stripe information into stripe store
+2016-03-31 14:54:12,727 INFO org.apache.hadoop.fs.FileSystem: File /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407231284_1_1459407247298.5599075461154233142 is being deleted only through Trash.
+2016-03-31 14:54:12,737 INFO org.apache.hadoop.raid.RaidNode: Source file hdfs://Master.Hadoop:9000/user/hadoop/input of size 0 Parity file /raid/user/hadoop/input of size 3145728 src mtime 1459407231284 parity mtime 1459407231284
+2016-03-31 14:54:12,742 INFO RaidMetrics: {"normal":{"Path":"hdfs://Master.Hadoop:9000/user/hadoop/input","Type":"ENCODING","Cluster":"Master.Hadoop:9000","Code":"xor","Result":"SUCCESS"},"int":{"ReadBlocks":42,"MetaBytes":6291456,"MetaBlocks":6,"SavingBytes":48200708,"ReadBytes":81738246,"time":1459407252,"Delay":1690}}
+2016-03-31 14:54:12,742 INFO org.apache.hadoop.raid.RaidNode: RAID statistics  numProcessedBlocks = 42 processedSize = 81738246 postRaidSize = 27246082 numMetaBlocks = 6 metaSize = 6291456 %save in raw disk space = 58
+2016-03-31 14:54:12,742 INFO org.apache.hadoop.raid.RaidNode: finish raid the file
+2016-03-31 14:54:12,742 INFO org.apache.hadoop.raid.RaidNode: Start process doTriggerMonitor
+2016-03-31 14:54:12,742 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:54:13,170 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:54:13,171 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:54:13,729 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:54:13,730 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:54:13,766 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:54:13,775 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:54:13,775 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:54:13,811 INFO org.apache.hadoop.fs.FileSystem: File /raid/user/hadoop/input is being deleted only through Trash.
+2016-03-31 14:54:13,819 INFO org.apache.hadoop.raid.PurgeMonitor: Purging hdfs://Master.Hadoop:9000/raid/user/hadoop/input, recursive=false
+2016-03-31 14:54:13,821 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:54:13,821 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:54:22,743 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:54:23,172 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:54:23,172 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:54:23,822 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:54:23,822 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:54:23,858 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:54:23,859 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:54:23,859 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:54:23,890 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:54:23,890 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:54:32,744 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:54:33,173 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:54:33,173 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:54:33,891 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:54:33,891 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:54:33,915 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:54:33,916 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:54:33,916 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:54:33,934 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:54:33,934 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:54:42,746 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:54:43,174 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:54:43,174 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:54:43,935 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:54:43,935 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:54:43,966 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:54:43,970 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:54:43,971 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:54:43,997 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:54:43,998 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:54:52,902 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:54:53,175 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:54:53,175 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:54:53,998 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:54:53,998 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:54:54,035 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:54:54,035 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:54:54,035 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:54:54,073 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:54:54,073 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:55:02,903 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:55:03,175 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:55:03,175 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:55:04,075 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:55:04,075 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:55:04,109 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:55:04,111 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:55:04,111 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:55:04,145 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:55:04,145 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:55:12,904 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:55:13,176 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:55:13,176 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:55:14,146 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:55:14,146 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:55:14,185 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:55:14,191 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:55:14,191 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:55:14,225 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:55:14,226 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:55:22,904 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:55:23,177 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:55:23,177 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:55:24,226 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:55:24,226 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:55:24,246 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:55:24,247 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:55:24,248 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:55:24,267 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:55:24,267 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:55:32,906 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:55:33,177 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:55:33,177 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:55:34,267 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:55:34,267 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:55:34,305 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:55:34,306 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:55:34,306 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:55:34,332 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:55:34,332 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:55:42,907 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:55:43,178 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:55:43,178 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:55:44,333 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:55:44,333 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:55:44,363 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:55:44,364 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:55:44,364 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:55:44,394 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:55:44,394 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:55:52,907 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:55:53,178 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:55:53,178 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:55:54,394 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:55:54,394 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:55:54,423 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:55:54,427 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:55:54,427 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:55:54,470 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:55:54,470 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:56:02,908 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:56:03,178 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:56:03,178 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:56:04,471 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:56:04,472 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:56:04,494 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:56:04,495 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:56:04,495 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:56:04,529 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:56:04,530 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:56:12,910 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:56:13,179 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:56:13,179 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:56:14,530 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:56:14,530 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:56:14,559 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:56:14,562 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:56:14,563 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:56:14,586 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:56:14,586 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:56:22,910 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:56:23,180 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:56:23,180 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:56:24,587 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:56:24,587 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:56:24,614 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:56:24,616 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:56:24,616 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:56:24,642 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:56:24,642 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:56:32,914 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:56:33,180 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:56:33,180 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:56:34,644 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:56:34,644 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:56:34,672 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:56:34,673 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:56:34,673 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:56:34,698 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:56:34,698 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:56:42,914 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:56:43,181 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:56:43,181 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:56:44,698 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:56:44,698 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:56:44,718 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:56:44,720 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:56:44,720 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:56:44,745 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:56:44,745 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:56:52,915 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:56:53,181 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:56:53,181 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:56:54,745 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:56:54,746 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:56:54,775 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:56:54,775 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:56:54,775 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:56:54,793 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:56:54,794 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:57:02,917 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:57:03,181 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:57:03,182 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:57:04,795 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:57:04,795 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:57:04,820 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:57:04,821 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:57:04,821 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:57:04,839 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:57:04,839 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:57:12,918 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:57:13,182 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:57:13,182 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:57:14,839 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:57:14,839 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:57:14,872 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:57:14,874 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:57:14,874 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:57:14,898 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:57:14,898 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:57:22,919 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:57:23,182 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:57:23,182 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:57:24,898 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:57:24,899 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:57:24,923 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:57:24,923 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:57:24,923 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:57:24,943 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:57:24,944 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:57:32,919 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:57:33,183 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:57:33,183 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:57:34,945 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:57:34,945 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:57:34,975 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:57:34,976 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:57:34,976 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:57:34,990 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:57:34,990 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:57:42,920 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:57:43,183 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:57:43,183 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:57:44,991 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:57:44,991 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:57:45,013 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:57:45,018 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:57:45,018 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:57:45,041 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:57:45,041 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:57:52,922 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:57:53,183 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:57:53,183 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:57:55,042 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:57:55,042 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:57:55,068 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:57:55,068 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:57:55,068 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:57:55,083 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:57:55,083 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:58:02,922 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:58:03,184 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:58:03,184 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:58:05,083 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:58:05,083 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:58:05,103 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:58:05,104 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:58:05,104 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:58:05,122 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:58:05,122 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:58:12,923 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:58:13,184 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:58:13,184 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:58:15,123 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:58:15,123 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:58:15,151 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:58:15,152 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:58:15,152 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:58:15,173 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:58:15,174 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:58:22,925 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:58:23,184 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:58:23,185 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:58:25,175 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:58:25,175 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:58:25,203 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:58:25,204 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:58:25,204 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:58:25,220 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:58:25,220 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:58:32,925 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:58:33,185 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:58:33,185 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:58:35,221 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:58:35,221 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:58:35,236 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:58:35,237 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:58:35,237 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:58:35,256 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:58:35,256 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:58:42,925 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:58:43,185 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:58:43,185 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:58:45,257 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:58:45,258 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:58:45,278 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:58:45,279 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:58:45,279 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:58:45,301 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:58:45,301 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:58:52,926 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:58:53,186 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:58:53,186 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:58:55,302 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:58:55,302 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:58:55,327 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:58:55,328 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:58:55,328 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:58:55,350 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:58:55,351 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:59:02,926 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:59:03,187 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:59:03,187 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:59:05,351 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:59:05,351 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:59:05,377 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:59:05,378 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:59:05,378 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:59:05,397 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:59:05,397 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:59:12,927 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:59:13,187 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:59:13,188 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:59:15,399 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:59:15,399 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:59:15,423 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:59:15,424 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:59:15,424 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:59:15,438 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:59:15,438 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:59:22,928 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:59:23,188 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:59:23,188 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:59:25,439 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:59:25,439 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:59:25,458 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:59:25,459 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:59:25,459 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:59:25,476 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:59:25,476 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:59:32,929 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:59:33,189 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:59:33,189 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:59:35,476 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:59:35,476 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:59:35,500 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:59:35,500 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:59:35,500 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:59:35,517 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:59:35,517 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:59:42,930 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:59:43,190 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:59:43,190 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:59:45,518 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:59:45,518 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:59:45,542 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:59:45,543 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:59:45,543 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:59:45,558 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:59:45,558 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 14:59:52,931 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 14:59:53,190 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 14:59:53,190 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 14:59:55,559 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 14:59:55,559 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:59:55,582 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:59:55,583 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 14:59:55,583 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 14:59:55,610 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 14:59:55,610 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:00:02,931 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:00:03,190 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:00:03,191 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:00:05,610 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:00:05,611 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:00:05,641 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:00:05,642 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:00:05,642 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:00:05,658 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:00:05,658 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:00:12,933 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:00:13,192 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:00:13,192 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:00:15,663 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:00:15,663 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:00:15,714 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:00:15,716 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:00:15,716 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:00:15,727 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:00:15,727 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:00:22,934 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:00:23,192 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:00:23,192 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:00:25,727 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:00:25,727 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:00:25,745 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:00:25,746 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:00:25,746 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:00:25,770 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:00:25,770 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:00:32,936 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:00:33,192 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:00:33,192 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:00:35,772 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:00:35,772 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:00:35,798 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:00:35,799 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:00:35,799 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:00:35,818 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:00:35,818 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:00:42,937 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:00:43,193 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:00:43,193 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:00:45,825 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:00:45,825 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:00:45,851 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:00:45,853 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:00:45,853 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:00:45,874 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:00:45,874 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:00:52,937 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:00:53,193 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:00:53,193 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:00:55,875 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:00:55,875 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:00:55,907 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:00:55,908 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:00:55,908 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:00:55,922 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:00:55,922 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:01:02,938 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:01:03,193 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:01:03,193 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:01:05,923 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:01:05,923 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:01:05,950 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:01:05,950 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:01:05,950 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:01:05,975 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:01:05,975 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:01:12,938 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:01:13,194 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:01:13,194 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:01:15,976 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:01:15,976 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:01:15,995 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:01:15,996 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:01:15,996 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:01:16,018 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:01:16,018 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:01:22,938 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:01:23,195 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:01:23,195 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:01:26,019 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:01:26,020 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:01:26,043 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:01:26,044 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:01:26,044 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:01:26,069 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:01:26,070 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:01:32,950 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:01:33,196 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:01:33,196 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:01:36,070 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:01:36,070 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:01:36,110 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:01:36,111 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:01:36,111 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:01:36,143 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:01:36,143 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:01:42,950 INFO org.apache.hadoop.raid.RaidNode: raidflag=true,notify the thread
+2016-03-31 15:01:42,951 INFO org.apache.hadoop.raid.RaidNode: Trigger thread continuing to run...
+2016-03-31 15:01:42,951 INFO org.apache.hadoop.raid.RaidNode: get the flag
+2016-03-31 15:01:42,951 INFO org.apache.hadoop.raid.RaidNode: TriggerMonitor.doProcess 1
+2016-03-31 15:01:42,951 INFO org.apache.hadoop.raid.RaidNode: Triggering Policy Filter hadoop hdfs://192.168.216.137:9000/user/hadoop/input
+2016-03-31 15:01:42,951 INFO org.apache.hadoop.raid.RaidNode: Start new traversal for policy hadoop
+2016-03-31 15:01:42,954 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[hdfs://Master.Hadoop:9000/user/hadoop/input] numThreads:4
+2016-03-31 15:01:43,020 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:01:43,020 INFO org.apache.hadoop.raid.RaidNode: Triggering Policy Action hadoop 1 files
+2016-03-31 15:01:43,029 INFO org.apache.hadoop.raid.XORCode: Initialized class org.apache.hadoop.raid.XORCode stripeLength:5 parityLength:1
+2016-03-31 15:01:43,117 INFO org.apache.hadoop.raid.LocalStripeStore: Load from /home/hadoop/hadoop-20/stripeStore
+2016-03-31 15:01:43,134 INFO org.apache.hadoop.raid.Encoder: Encoding partial parity /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407692426_1_1459407703022.-2842434002814488829/tmp/0
+2016-03-31 15:01:43,177 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t1.JPG:0
+2016-03-31 15:01:43,185 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t1.JPG:1048576
+2016-03-31 15:01:43,187 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t1.JPG:2097152
+2016-03-31 15:01:43,191 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t1.JPG:3145728
+2016-03-31 15:01:43,193 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t1.JPG:4194304
+2016-03-31 15:01:43,198 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:01:43,198 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:01:43,819 INFO org.apache.hadoop.raid.ParallelStreamReader: Shutting down parallel stream reader
+2016-03-31 15:01:44,088 INFO org.apache.hadoop.raid.Encoder: Wrote temp parity file /tmp/raid/localRaid2016-03-31-14-53-03-322/input5749063020577321880
+2016-03-31 15:01:44,104 INFO org.apache.hadoop.raid.Encoder: renamed /tmp/raid/localRaid2016-03-31-14-53-03-322/input5749063020577321880 to /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407692426_1_1459407703022.-2842434002814488829/tmp/0
+2016-03-31 15:01:44,104 INFO org.apache.hadoop.fs.FileSystem: File /tmp/raid/localRaid2016-03-31-14-53-03-322/input5749063020577321880 is being deleted only through Trash.
+2016-03-31 15:01:44,108 INFO org.apache.hadoop.raid.Encoder: Encoded partial parity /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407692426_1_1459407703022.-2842434002814488829/tmp/0
+2016-03-31 15:01:45,042 INFO org.apache.hadoop.raid.Encoder: Number of partial files in the directory /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407692426_1_1459407703022.-2842434002814488829/tmp is 1. It's different from expected number 4
+2016-03-31 15:01:45,042 INFO org.apache.hadoop.raid.RaidNode: RAID statistics  numProcessedBlocks = 20 processedSize = 38506042 postRaidSize = 0 numMetaBlocks = 0 metaSize = 0 %save in raw disk space = 100
+2016-03-31 15:01:45,045 INFO org.apache.hadoop.raid.XORCode: Initialized class org.apache.hadoop.raid.XORCode stripeLength:5 parityLength:1
+2016-03-31 15:01:45,084 INFO org.apache.hadoop.raid.LocalStripeStore: Load from /home/hadoop/hadoop-20/stripeStore
+2016-03-31 15:01:45,096 INFO org.apache.hadoop.raid.Encoder: Encoding partial parity /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407692426_1_1459407703022.-2842434002814488829/tmp/1
+2016-03-31 15:01:45,190 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t1.JPG:5242880
+2016-03-31 15:01:45,199 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:0
+2016-03-31 15:01:45,207 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:1048576
+2016-03-31 15:01:45,222 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:2097152
+2016-03-31 15:01:45,243 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:3145728
+2016-03-31 15:01:45,655 INFO org.apache.hadoop.raid.ParallelStreamReader: Shutting down parallel stream reader
+2016-03-31 15:01:45,821 INFO org.apache.hadoop.raid.Encoder: Wrote temp parity file /tmp/raid/localRaid2016-03-31-14-53-03-322/input5716451013071677920
+2016-03-31 15:01:45,835 INFO org.apache.hadoop.raid.Encoder: renamed /tmp/raid/localRaid2016-03-31-14-53-03-322/input5716451013071677920 to /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407692426_1_1459407703022.-2842434002814488829/tmp/1
+2016-03-31 15:01:45,835 INFO org.apache.hadoop.fs.FileSystem: File /tmp/raid/localRaid2016-03-31-14-53-03-322/input5716451013071677920 is being deleted only through Trash.
+2016-03-31 15:01:45,837 INFO org.apache.hadoop.raid.Encoder: Encoded partial parity /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407692426_1_1459407703022.-2842434002814488829/tmp/1
+2016-03-31 15:01:46,033 INFO org.apache.hadoop.raid.Encoder: Number of partial files in the directory /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407692426_1_1459407703022.-2842434002814488829/tmp is 2. It's different from expected number 4
+2016-03-31 15:01:46,042 INFO org.apache.hadoop.raid.XORCode: Initialized class org.apache.hadoop.raid.XORCode stripeLength:5 parityLength:1
+2016-03-31 15:01:46,153 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:01:46,153 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:01:46,177 INFO org.apache.hadoop.raid.LocalStripeStore: Load from /home/hadoop/hadoop-20/stripeStore
+2016-03-31 15:01:46,186 INFO org.apache.hadoop.raid.Encoder: Encoding partial parity /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407692426_1_1459407703022.-2842434002814488829/tmp/2
+2016-03-31 15:01:46,196 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:01:46,202 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:01:46,202 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:01:46,253 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:4194304
+2016-03-31 15:01:46,256 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:5242880
+2016-03-31 15:01:46,258 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:6291456
+2016-03-31 15:01:46,260 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:0
+2016-03-31 15:01:46,286 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:01:46,287 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:01:46,288 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:1048576
+2016-03-31 15:01:46,871 INFO org.apache.hadoop.raid.ParallelStreamReader: Shutting down parallel stream reader
+2016-03-31 15:01:47,186 INFO org.apache.hadoop.raid.Encoder: Wrote temp parity file /tmp/raid/localRaid2016-03-31-14-53-03-322/input-3299724791081500954
+2016-03-31 15:01:47,198 INFO org.apache.hadoop.raid.Encoder: renamed /tmp/raid/localRaid2016-03-31-14-53-03-322/input-3299724791081500954 to /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407692426_1_1459407703022.-2842434002814488829/tmp/2
+2016-03-31 15:01:47,198 INFO org.apache.hadoop.fs.FileSystem: File /tmp/raid/localRaid2016-03-31-14-53-03-322/input-3299724791081500954 is being deleted only through Trash.
+2016-03-31 15:01:47,202 INFO org.apache.hadoop.raid.Encoder: Encoded partial parity /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407692426_1_1459407703022.-2842434002814488829/tmp/2
+2016-03-31 15:01:49,041 INFO org.apache.hadoop.raid.Encoder: Number of partial files in the directory /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407692426_1_1459407703022.-2842434002814488829/tmp is 3. It's different from expected number 4
+2016-03-31 15:01:49,044 INFO org.apache.hadoop.raid.XORCode: Initialized class org.apache.hadoop.raid.XORCode stripeLength:5 parityLength:1
+2016-03-31 15:01:49,090 INFO org.apache.hadoop.raid.LocalStripeStore: Load from /home/hadoop/hadoop-20/stripeStore
+2016-03-31 15:01:49,107 INFO org.apache.hadoop.raid.Encoder: Encoding partial parity /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407692426_1_1459407703022.-2842434002814488829/tmp/3
+2016-03-31 15:01:49,162 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:2097152
+2016-03-31 15:01:49,166 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:3145728
+2016-03-31 15:01:49,170 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:4194304
+2016-03-31 15:01:49,172 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:5242880
+2016-03-31 15:01:49,174 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:6291456
+2016-03-31 15:01:49,845 INFO org.apache.hadoop.raid.ParallelStreamReader: Shutting down parallel stream reader
+2016-03-31 15:01:50,079 INFO org.apache.hadoop.raid.Encoder: Wrote temp parity file /tmp/raid/localRaid2016-03-31-14-53-03-322/input7033072041024632560
+2016-03-31 15:01:50,081 INFO org.apache.hadoop.raid.Encoder: renamed /tmp/raid/localRaid2016-03-31-14-53-03-322/input7033072041024632560 to /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407692426_1_1459407703022.-2842434002814488829/tmp/3
+2016-03-31 15:01:50,081 INFO org.apache.hadoop.fs.FileSystem: File /tmp/raid/localRaid2016-03-31-14-53-03-322/input7033072041024632560 is being deleted only through Trash.
+2016-03-31 15:01:50,082 INFO org.apache.hadoop.raid.Encoder: Encoded partial parity /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407692426_1_1459407703022.-2842434002814488829/tmp/3
+2016-03-31 15:01:50,086 INFO org.apache.hadoop.raid.Encoder: Renamed /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407692426_1_1459407703022.-2842434002814488829/tmp to /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407692426_1_1459407703022.-2842434002814488829/final
+2016-03-31 15:01:50,088 INFO org.apache.hadoop.raid.Encoder: Concated 4 files into hdfs://Master.Hadoop:9000/tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407692426_1_1459407703022.-2842434002814488829/final/0
+2016-03-31 15:01:50,106 INFO org.apache.hadoop.raid.Encoder: Wrote parity file /raid/user/hadoop/input
+2016-03-31 15:01:50,421 INFO org.apache.hadoop.raid.LocalStripeStore:  Put xor null parity blocks: blk_-25421428323086469_1009 source blocks: blk_-4865267852108607108_1008 blk_-516815145630938324_1008 blk_-2995198753256270441_1008 blk_-2695478271551672846_1008 blk_-3051778802392769810_1008
+2016-03-31 15:01:50,610 INFO org.apache.hadoop.raid.LocalStripeStore:  Put xor null parity blocks: blk_-747729985455538567_1010 source blocks: blk_-6434425638221103539_1008 blk_-4445731439915637834_1004 blk_-8123922764451860906_1004 blk_-9136981098609229171_1004 blk_-4969685274478596987_1004
+2016-03-31 15:01:50,886 INFO org.apache.hadoop.raid.LocalStripeStore:  Put xor null parity blocks: blk_-7090441773188033844_1011 source blocks: blk_-8408927363542348737_1004 blk_-3108600246303975102_1004 blk_-2123177147581173014_1004 blk_-77482294593883422_1001 blk_-1151519280884766990_1001
+2016-03-31 15:01:51,118 INFO org.apache.hadoop.raid.LocalStripeStore:  Put xor null parity blocks: blk_-4874048377306091916_1012 source blocks: blk_-5451445174149223534_1001 blk_-3760156498359052304_1001 blk_-1165777510887863397_1001 blk_-1263981262745365494_1001 blk_-5095307487532470347_1001
+2016-03-31 15:01:51,118 INFO org.apache.hadoop.raid.Encoder: Wrote stripe information into stripe store
+2016-03-31 15:01:51,118 INFO org.apache.hadoop.fs.FileSystem: File /tmp/raid/localRaid2016-03-31-14-53-03-322/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407692426_1_1459407703022.-2842434002814488829 is being deleted only through Trash.
+2016-03-31 15:01:51,140 INFO org.apache.hadoop.raid.RaidNode: Source file hdfs://Master.Hadoop:9000/user/hadoop/input of size 0 Parity file /raid/user/hadoop/input of size 4194304 src mtime 1459407692426 parity mtime 1459407692426
+2016-03-31 15:01:51,177 INFO RaidMetrics: {"normal":{"Path":"hdfs://Master.Hadoop:9000/user/hadoop/input","Type":"ENCODING","Cluster":"Master.Hadoop:9000","Code":"xor","Result":"SUCCESS"},"int":{"ReadBlocks":80,"MetaBytes":8388608,"MetaBlocks":8,"SavingBytes":107129518,"ReadBytes":154024168,"time":1459407711,"Delay":2135}}
+2016-03-31 15:01:51,177 INFO org.apache.hadoop.raid.RaidNode: RAID statistics  numProcessedBlocks = 80 processedSize = 154024168 postRaidSize = 38506042 numMetaBlocks = 8 metaSize = 8388608 %save in raw disk space = 69
+2016-03-31 15:01:51,177 INFO org.apache.hadoop.raid.RaidNode: finish raid the file
+2016-03-31 15:01:51,177 INFO org.apache.hadoop.raid.RaidNode: Start process doTriggerMonitor
+2016-03-31 15:01:51,177 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:01:53,199 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:01:53,199 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:01:56,288 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:01:56,288 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:01:56,326 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:01:56,326 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:01:56,327 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:01:56,362 INFO org.apache.hadoop.fs.FileSystem: File /raid/user/hadoop/input is being deleted only through Trash.
+2016-03-31 15:01:56,387 INFO org.apache.hadoop.raid.PurgeMonitor: Purging hdfs://Master.Hadoop:9000/raid/user/hadoop/input, recursive=false
+2016-03-31 15:01:56,387 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:01:56,388 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:02:01,178 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:02:03,200 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:02:03,200 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:02:06,398 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:02:06,398 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:02:06,455 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:02:06,455 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:02:06,455 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:02:06,494 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:02:06,494 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:02:11,182 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:02:13,209 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:02:13,209 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:02:16,495 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:02:16,495 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:02:16,526 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:02:16,526 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:02:16,526 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:02:16,563 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:02:16,563 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:02:21,183 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:02:23,209 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:02:23,209 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:02:26,564 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:02:26,565 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:02:26,598 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:02:26,599 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:02:26,599 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:02:26,630 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:02:26,630 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:02:31,184 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:02:33,210 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:02:33,210 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:02:36,630 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:02:36,630 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:02:36,661 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:02:36,662 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:02:36,662 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:02:36,717 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:02:36,717 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:02:41,185 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:02:43,210 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:02:43,210 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:02:46,719 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:02:46,719 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:02:46,753 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:02:46,758 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:02:46,758 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:02:46,785 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:02:46,785 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:02:51,186 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:02:53,211 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:02:53,211 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:02:56,785 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:02:56,785 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:02:56,820 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:02:56,820 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:02:56,820 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:02:56,838 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:02:56,838 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:03:01,186 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:03:03,211 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:03:03,211 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:03:06,838 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:03:06,839 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:03:06,876 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:03:06,876 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:03:06,876 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:03:06,902 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:03:06,902 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:03:11,187 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:03:13,211 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:03:13,211 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:03:16,903 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:03:16,903 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:03:16,933 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:03:16,935 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:03:16,935 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:03:16,966 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:03:16,966 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:03:21,188 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:03:23,212 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:03:23,212 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:03:26,971 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:03:26,971 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:03:27,018 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:03:27,019 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:03:27,019 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:03:27,046 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:03:27,046 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:03:31,190 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:03:33,212 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:03:33,212 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:03:37,046 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:03:37,046 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:03:37,078 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:03:37,081 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:03:37,081 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:03:37,113 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:03:37,113 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:03:41,190 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:03:43,212 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:03:43,212 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:03:47,114 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:03:47,114 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:03:47,158 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:03:47,159 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:03:47,159 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:03:47,185 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:03:47,185 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:03:51,194 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:03:51,714 INFO org.apache.hadoop.raid.RaidNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down RaidNode at Master.Hadoop/192.168.216.137
+************************************************************/
+2016-03-31 15:26:07,950 INFO org.apache.hadoop.raid.RaidNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting RaidNode
+STARTUP_MSG:   host = Master.Hadoop/192.168.216.137
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20
+STARTUP_MSG:   build =  -r ; compiled by 'hadoop' on Thu Mar 31 14:42:44 CST 2016
+************************************************************/
+2016-03-31 15:26:08,337 INFO org.apache.hadoop.raid.RaidNode: modTimePeriod: 0
+2016-03-31 15:26:08,374 WARN org.apache.hadoop.raid.RaidNode: Key raid.mapreduce.upload.classes is not defined
+2016-03-31 15:26:08,938 INFO org.apache.hadoop.conf.ClientConfigurationUtil: Client configuration lookup disabled/failed. Using default configuration
+2016-03-31 15:26:09,524 INFO org.apache.hadoop.fs.FileSystem: File /tmp/raid is being deleted only through Trash.
+2016-03-31 15:26:09,580 INFO org.apache.hadoop.raid.ConfigManager: Reloading config file /home/hadoop/hadoop-20/conf/raid.xml
+2016-03-31 15:26:09,610 INFO org.apache.hadoop.raid.ConfigManager: hadoop.srcReplication = 2
+2016-03-31 15:26:09,610 INFO org.apache.hadoop.raid.ConfigManager: hadoop.targetReplication = 2
+2016-03-31 15:26:09,610 INFO org.apache.hadoop.raid.ConfigManager: hadoop.metaReplication = 2
+2016-03-31 15:26:09,610 INFO org.apache.hadoop.raid.ConfigManager: hadoop.modTimePeriod = 0
+2016-03-31 15:26:09,610 INFO org.apache.hadoop.raid.ConfigManager: hadoop.codecId = xor
+2016-03-31 15:26:09,622 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=LocalRaidNode, port=60000
+2016-03-31 15:26:09,627 INFO org.apache.hadoop.ipc.Server: IPC SocketReader 0 on 60000: starting
+2016-03-31 15:26:09,696 INFO org.apache.hadoop.raid.LocalStripeStore: Load from /home/hadoop/hadoop-20/stripeStore
+2016-03-31 15:26:09,696 INFO org.apache.hadoop.raid.RaidNode: RaidNode up at: /127.0.0.1:60000
+2016-03-31 15:26:09,709 INFO org.apache.hadoop.raid.RaidNodeMetrics: RaidNode Metrics is initialized
+2016-03-31 15:26:09,711 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-03-31 15:26:09,712 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 60000: starting
+2016-03-31 15:26:09,714 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 60000: starting
+2016-03-31 15:26:09,715 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 60000: starting
+2016-03-31 15:26:09,716 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 60000: starting
+2016-03-31 15:26:09,716 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 60000: starting
+2016-03-31 15:26:09,716 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 60000: starting
+2016-03-31 15:26:09,717 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 60000: starting
+2016-03-31 15:26:09,717 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 60000: starting
+2016-03-31 15:26:09,717 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 60000: starting
+2016-03-31 15:26:09,719 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 60000: starting
+2016-03-31 15:26:09,724 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 60000: starting
+2016-03-31 15:26:09,758 INFO org.apache.hadoop.RaidShell: RaidShell connecting to localhost/127.0.0.1:60000
+2016-03-31 15:26:09,812 INFO org.apache.hadoop.RaidShell: RaidShell connecting to localhost/127.0.0.1:60000
+2016-03-31 15:26:09,815 INFO org.apache.hadoop.RaidShell: RaidShell connecting to localhost/127.0.0.1:60000
+2016-03-31 15:26:09,823 INFO org.apache.hadoop.raid.RaidNode: start dotriggerThread
+2016-03-31 15:26:09,823 INFO org.apache.hadoop.raid.LocalBlockIntegrityMonitor: LocalBlockFixer continuing to run...
+2016-03-31 15:26:09,824 INFO org.apache.hadoop.raid.RaidNode: start triggerThread
+2016-03-31 15:26:09,824 INFO org.apache.hadoop.raid.RaidNode: Start process doTriggerMonitor
+2016-03-31 15:26:09,825 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:26:09,838 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:26:09,838 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:26:09,858 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /rack2/192.168.216.139:50010
+2016-03-31 15:26:09,859 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /rack1/192.168.216.138:50010
+2016-03-31 15:26:09,859 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /rack3/192.168.216.140:50010
+2016-03-31 15:26:09,861 INFO org.apache.hadoop.raid.RaidNode: Started archive scan
+2016-03-31 15:26:09,884 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[] numThreads:4
+2016-03-31 15:26:09,894 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:26:09,899 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[hdfs://Master.Hadoop:9000/user/hadoop/input] numThreads:4
+2016-03-31 15:26:09,943 INFO org.apache.hadoop.conf.ClientConfigurationUtil: Client configuration lookup disabled/failed. Using default configuration
+2016-03-31 15:26:10,027 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-03-31 15:26:10,067 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:26:10,068 INFO org.apache.hadoop.raid.StatisticsCollector: Invoking raidFiles with 1 files
+2016-03-31 15:26:10,110 INFO org.apache.hadoop.raid.XORCode: Initialized class org.apache.hadoop.raid.XORCode stripeLength:5 parityLength:1
+2016-03-31 15:26:10,149 INFO org.apache.hadoop.raid.LocalStripeStore: Load from /home/hadoop/hadoop-20/stripeStore
+2016-03-31 15:26:10,208 INFO org.apache.hadoop.raid.Encoder: Encoding partial parity /tmp/raid/localRaid2016-03-31-15-26-10-169/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407693634_1_1459409170074.-5836185591166998322/tmp/0
+2016-03-31 15:26:10,235 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-03-31 15:26:10,269 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2016-03-31 15:26:10,280 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50091
+2016-03-31 15:26:10,281 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50091 webServer.getConnectors()[0].getLocalPort() returned 50091
+2016-03-31 15:26:10,281 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50091
+2016-03-31 15:26:10,281 INFO org.mortbay.log: jetty-6.1.26.cloudera.1
+2016-03-31 15:26:10,360 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t1.JPG:0
+2016-03-31 15:26:10,368 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t1.JPG:1048576
+2016-03-31 15:26:10,378 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t1.JPG:2097152
+2016-03-31 15:26:10,388 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t1.JPG:3145728
+2016-03-31 15:26:10,395 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t1.JPG:4194304
+2016-03-31 15:26:11,079 INFO org.mortbay.log: Started SelectChannelConnector@127.0.0.1:50091
+2016-03-31 15:26:11,081 INFO org.apache.hadoop.raid.RaidNode: Web server started at port 50091
+2016-03-31 15:26:11,086 INFO org.apache.hadoop.raid.RaidNode: Registered RaidNodeStatusMBean
+2016-03-31 15:26:12,298 INFO org.apache.hadoop.raid.ParallelStreamReader: Shutting down parallel stream reader
+2016-03-31 15:26:15,431 INFO org.apache.hadoop.raid.Encoder: Wrote temp parity file /tmp/raid/localRaid2016-03-31-15-26-10-169/input4743479087803477187
+2016-03-31 15:26:15,447 INFO org.apache.hadoop.raid.Encoder: renamed /tmp/raid/localRaid2016-03-31-15-26-10-169/input4743479087803477187 to /tmp/raid/localRaid2016-03-31-15-26-10-169/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407693634_1_1459409170074.-5836185591166998322/tmp/0
+2016-03-31 15:26:15,447 INFO org.apache.hadoop.fs.FileSystem: File /tmp/raid/localRaid2016-03-31-15-26-10-169/input4743479087803477187 is being deleted only through Trash.
+2016-03-31 15:26:15,454 INFO org.apache.hadoop.raid.Encoder: Encoded partial parity /tmp/raid/localRaid2016-03-31-15-26-10-169/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407693634_1_1459409170074.-5836185591166998322/tmp/0
+2016-03-31 15:26:16,534 INFO org.apache.hadoop.raid.Encoder: Number of partial files in the directory /tmp/raid/localRaid2016-03-31-15-26-10-169/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407693634_1_1459409170074.-5836185591166998322/tmp is 1. It's different from expected number 4
+2016-03-31 15:26:16,534 INFO org.apache.hadoop.raid.RaidNode: RAID statistics  numProcessedBlocks = 20 processedSize = 38506042 postRaidSize = 0 numMetaBlocks = 0 metaSize = 0 %save in raw disk space = 100
+2016-03-31 15:26:16,539 INFO org.apache.hadoop.raid.XORCode: Initialized class org.apache.hadoop.raid.XORCode stripeLength:5 parityLength:1
+2016-03-31 15:26:16,573 INFO org.apache.hadoop.raid.LocalStripeStore: Load from /home/hadoop/hadoop-20/stripeStore
+2016-03-31 15:26:16,587 INFO org.apache.hadoop.raid.Encoder: Encoding partial parity /tmp/raid/localRaid2016-03-31-15-26-10-169/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407693634_1_1459409170074.-5836185591166998322/tmp/1
+2016-03-31 15:26:16,605 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t1.JPG:5242880
+2016-03-31 15:26:16,631 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:0
+2016-03-31 15:26:16,637 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:1048576
+2016-03-31 15:26:16,645 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:2097152
+2016-03-31 15:26:16,651 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:3145728
+2016-03-31 15:26:17,180 INFO org.apache.hadoop.raid.ParallelStreamReader: Shutting down parallel stream reader
+2016-03-31 15:26:17,320 INFO org.apache.hadoop.raid.Encoder: Wrote temp parity file /tmp/raid/localRaid2016-03-31-15-26-10-169/input5702579846992690793
+2016-03-31 15:26:17,326 INFO org.apache.hadoop.raid.Encoder: renamed /tmp/raid/localRaid2016-03-31-15-26-10-169/input5702579846992690793 to /tmp/raid/localRaid2016-03-31-15-26-10-169/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407693634_1_1459409170074.-5836185591166998322/tmp/1
+2016-03-31 15:26:17,326 INFO org.apache.hadoop.fs.FileSystem: File /tmp/raid/localRaid2016-03-31-15-26-10-169/input5702579846992690793 is being deleted only through Trash.
+2016-03-31 15:26:17,329 INFO org.apache.hadoop.raid.Encoder: Encoded partial parity /tmp/raid/localRaid2016-03-31-15-26-10-169/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407693634_1_1459409170074.-5836185591166998322/tmp/1
+2016-03-31 15:26:17,449 INFO org.apache.hadoop.raid.Encoder: Number of partial files in the directory /tmp/raid/localRaid2016-03-31-15-26-10-169/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407693634_1_1459409170074.-5836185591166998322/tmp is 2. It's different from expected number 4
+2016-03-31 15:26:17,459 INFO org.apache.hadoop.raid.XORCode: Initialized class org.apache.hadoop.raid.XORCode stripeLength:5 parityLength:1
+2016-03-31 15:26:17,511 INFO org.apache.hadoop.raid.LocalStripeStore: Load from /home/hadoop/hadoop-20/stripeStore
+2016-03-31 15:26:17,516 INFO org.apache.hadoop.raid.Encoder: Encoding partial parity /tmp/raid/localRaid2016-03-31-15-26-10-169/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407693634_1_1459409170074.-5836185591166998322/tmp/2
+2016-03-31 15:26:17,530 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:4194304
+2016-03-31 15:26:17,537 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:5242880
+2016-03-31 15:26:17,543 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t2.JPG:6291456
+2016-03-31 15:26:17,552 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:0
+2016-03-31 15:26:17,557 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:1048576
+2016-03-31 15:26:18,689 INFO org.apache.hadoop.raid.ParallelStreamReader: Shutting down parallel stream reader
+2016-03-31 15:26:19,826 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:26:19,840 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:26:19,840 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:26:19,852 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:26:19,853 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:26:19,874 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:26:19,875 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:26:19,876 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:26:19,899 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:26:19,900 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:26:26,453 INFO org.apache.hadoop.raid.Encoder: Wrote temp parity file /tmp/raid/localRaid2016-03-31-15-26-10-169/input9211988616148142723
+2016-03-31 15:26:26,458 INFO org.apache.hadoop.raid.Encoder: renamed /tmp/raid/localRaid2016-03-31-15-26-10-169/input9211988616148142723 to /tmp/raid/localRaid2016-03-31-15-26-10-169/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407693634_1_1459409170074.-5836185591166998322/tmp/2
+2016-03-31 15:26:26,458 INFO org.apache.hadoop.fs.FileSystem: File /tmp/raid/localRaid2016-03-31-15-26-10-169/input9211988616148142723 is being deleted only through Trash.
+2016-03-31 15:26:26,461 INFO org.apache.hadoop.raid.Encoder: Encoded partial parity /tmp/raid/localRaid2016-03-31-15-26-10-169/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407693634_1_1459409170074.-5836185591166998322/tmp/2
+2016-03-31 15:26:27,208 INFO org.apache.hadoop.raid.Encoder: Number of partial files in the directory /tmp/raid/localRaid2016-03-31-15-26-10-169/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407693634_1_1459409170074.-5836185591166998322/tmp is 3. It's different from expected number 4
+2016-03-31 15:26:27,220 INFO org.apache.hadoop.raid.XORCode: Initialized class org.apache.hadoop.raid.XORCode stripeLength:5 parityLength:1
+2016-03-31 15:26:27,256 INFO org.apache.hadoop.raid.LocalStripeStore: Load from /home/hadoop/hadoop-20/stripeStore
+2016-03-31 15:26:27,294 INFO org.apache.hadoop.raid.Encoder: Encoding partial parity /tmp/raid/localRaid2016-03-31-15-26-10-169/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407693634_1_1459409170074.-5836185591166998322/tmp/3
+2016-03-31 15:26:27,321 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:2097152
+2016-03-31 15:26:27,328 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:3145728
+2016-03-31 15:26:27,332 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:4194304
+2016-03-31 15:26:27,339 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:5242880
+2016-03-31 15:26:27,346 INFO org.apache.hadoop.raid.StripeReader: Opening stream at hdfs://Master.Hadoop:9000/user/hadoop/input/t3.JPG:6291456
+2016-03-31 15:26:27,979 INFO org.apache.hadoop.raid.ParallelStreamReader: Shutting down parallel stream reader
+2016-03-31 15:26:29,827 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:26:29,841 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:26:29,841 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:26:29,900 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:26:29,901 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:26:29,912 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:26:29,913 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:26:29,913 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:26:29,925 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:26:29,925 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:26:34,356 INFO org.apache.hadoop.raid.Encoder: Wrote temp parity file /tmp/raid/localRaid2016-03-31-15-26-10-169/input-6050737820804616382
+2016-03-31 15:26:34,361 INFO org.apache.hadoop.raid.Encoder: renamed /tmp/raid/localRaid2016-03-31-15-26-10-169/input-6050737820804616382 to /tmp/raid/localRaid2016-03-31-15-26-10-169/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407693634_1_1459409170074.-5836185591166998322/tmp/3
+2016-03-31 15:26:34,361 INFO org.apache.hadoop.fs.FileSystem: File /tmp/raid/localRaid2016-03-31-15-26-10-169/input-6050737820804616382 is being deleted only through Trash.
+2016-03-31 15:26:34,364 INFO org.apache.hadoop.raid.Encoder: Encoded partial parity /tmp/raid/localRaid2016-03-31-15-26-10-169/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407693634_1_1459409170074.-5836185591166998322/tmp/3
+2016-03-31 15:26:34,373 INFO org.apache.hadoop.raid.Encoder: Renamed /tmp/raid/localRaid2016-03-31-15-26-10-169/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407693634_1_1459409170074.-5836185591166998322/tmp to /tmp/raid/localRaid2016-03-31-15-26-10-169/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407693634_1_1459409170074.-5836185591166998322/final
+2016-03-31 15:26:34,398 INFO org.apache.hadoop.raid.Encoder: Concated 4 files into hdfs://Master.Hadoop:9000/tmp/raid/localRaid2016-03-31-15-26-10-169/partial_d65e5ff75e4f9b7a650523cd9e2e5696_1459407693634_1_1459409170074.-5836185591166998322/final/0
+2016-03-31 15:26:34,412 INFO RaidMetrics: {"normal":{"Path":"hdfs://Master.Hadoop:9000/user/hadoop/input","Type":"ENCODING","Cluster":"Master.Hadoop:9000","Error":"java.io.IOException: srcStripes has 5 stripes and 22 blocks : blk_-4865267852108607108_1008 blk_-516815145630938324_1008 blk_-2995198753256270441_1008 blk_-2695478271551672846_1008 blk_-3051778802392769810_1008 ;blk_-6434425638221103539_1008 blk_-4445731439915637834_1004 blk_-8123922764451860906_1004 blk_-9136981098609229171_1004 blk_-4969685274478596987_1004 ;blk_-8408927363542348737_1004 blk_-3108600246303975102_1004 blk_-2123177147581173014_1004 blk_-77482294593883422_1001 blk_-1151519280884766990_1001 ;blk_-5451445174149223534_1001 blk_-3760156498359052304_1001 blk_-1165777510887863397_1001 blk_-1263981262745365494_1001 blk_-5095307487532470347_1001 ;blk_-1863077868849479495_1016 blk_-4120877432776501518_1017 ; Doesn't match hdfs://Master.Hadoop:9000/user/hadoop/input\n\tat org.apache.hadoop.raid.Encoder.getSrcStripes(Encoder.java:283)\n\tat org.apache.hadoop.raid.Encoder.encodeFile(Encoder.java:518)\n\tat org.apache.hadoop.raid.RaidNode.generateParityFile(RaidNode.java:1886)\n\tat org.apache.hadoop.raid.RaidNode.doDirRaid(RaidNode.java:1739)\n\tat org.apache.hadoop.raid.RaidNode.doRaid(RaidNode.java:1573)\n\tat org.apache.hadoop.raid.RaidNode.doRaid(RaidNode.java:1460)\n\tat org.apache.hadoop.raid.LocalRaidNode.raidFiles(LocalRaidNode.java:55)\n\tat org.apache.hadoop.raid.StatisticsCollector.submitRaidJobsWhenPossible(StatisticsCollector.java:534)\n\tat org.apache.hadoop.raid.StatisticsCollector.collectSourceStatistics(StatisticsCollector.java:481)\n\tat org.apache.hadoop.raid.StatisticsCollector.collectSourceStatistics(StatisticsCollector.java:385)\n\tat org.apache.hadoop.raid.StatisticsCollector.collect(StatisticsCollector.java:314)\n\tat org.apache.hadoop.raid.StatisticsCollector.run(StatisticsCollector.java:100)\n\tat java.lang.Thread.run(Thread.java:745)\n","Code":"xor","Result":"FAILURE"},"int":{"ReadBlocks":80,"MetaBytes":0,"MetaBlocks":0,"SavingBytes":154024168,"ReadBytes":154024168,"time":1459409194,"Delay":7196}}
+2016-03-31 15:26:34,415 WARN org.apache.hadoop.raid.StatisticsCollector: Failed to raid files for policy:hadoop
+java.io.IOException: srcStripes has 5 stripes and 22 blocks : blk_-4865267852108607108_1008 blk_-516815145630938324_1008 blk_-2995198753256270441_1008 blk_-2695478271551672846_1008 blk_-3051778802392769810_1008 ;blk_-6434425638221103539_1008 blk_-4445731439915637834_1004 blk_-8123922764451860906_1004 blk_-9136981098609229171_1004 blk_-4969685274478596987_1004 ;blk_-8408927363542348737_1004 blk_-3108600246303975102_1004 blk_-2123177147581173014_1004 blk_-77482294593883422_1001 blk_-1151519280884766990_1001 ;blk_-5451445174149223534_1001 blk_-3760156498359052304_1001 blk_-1165777510887863397_1001 blk_-1263981262745365494_1001 blk_-5095307487532470347_1001 ;blk_-1863077868849479495_1016 blk_-4120877432776501518_1017 ; Doesn't match hdfs://Master.Hadoop:9000/user/hadoop/input
+	at org.apache.hadoop.raid.Encoder.getSrcStripes(Encoder.java:283)
+	at org.apache.hadoop.raid.Encoder.encodeFile(Encoder.java:518)
+	at org.apache.hadoop.raid.RaidNode.generateParityFile(RaidNode.java:1886)
+	at org.apache.hadoop.raid.RaidNode.doDirRaid(RaidNode.java:1739)
+	at org.apache.hadoop.raid.RaidNode.doRaid(RaidNode.java:1573)
+	at org.apache.hadoop.raid.RaidNode.doRaid(RaidNode.java:1460)
+	at org.apache.hadoop.raid.LocalRaidNode.raidFiles(LocalRaidNode.java:55)
+	at org.apache.hadoop.raid.StatisticsCollector.submitRaidJobsWhenPossible(StatisticsCollector.java:534)
+	at org.apache.hadoop.raid.StatisticsCollector.collectSourceStatistics(StatisticsCollector.java:481)
+	at org.apache.hadoop.raid.StatisticsCollector.collectSourceStatistics(StatisticsCollector.java:385)
+	at org.apache.hadoop.raid.StatisticsCollector.collect(StatisticsCollector.java:314)
+	at org.apache.hadoop.raid.StatisticsCollector.run(StatisticsCollector.java:100)
+	at java.lang.Thread.run(Thread.java:745)
+2016-03-31 15:26:34,429 INFO org.apache.hadoop.raid.StatisticsCollector: 1 files were not raided by class org.apache.hadoop.raid.StatisticsCollector because of the job limit.
+2016-03-31 15:26:34,429 INFO org.apache.hadoop.raid.StatisticsCollector: Finish collecting statistics for policy:hadoop
+xor Statistics
+RAIDED: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+NOT_RAIDED_TOO_NEW: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+NOT_RAIDED_TOO_SMALL: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+NOT_RAIDED_BUT_SHOULD: dirs: 1 files:3 blocks:20 bytes:38506042 logical:19253021
+NOT_RAIDED_OTHER_POLICY: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+NOT_RAIDED_NO_POLICY: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+PARITY: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+
+2016-03-31 15:26:34,429 INFO org.apache.hadoop.raid.StatisticsCollector: Collecting parity statistics in /raid.
+2016-03-31 15:26:34,429 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:26:34,440 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:26:34,440 INFO org.apache.hadoop.raid.StatisticsCollector: Finish collecting statistics in /raid
+xor Statistics
+RAIDED: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+NOT_RAIDED_TOO_NEW: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+NOT_RAIDED_TOO_SMALL: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+NOT_RAIDED_BUT_SHOULD: dirs: 1 files:3 blocks:20 bytes:38506042 logical:19253021
+NOT_RAIDED_OTHER_POLICY: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+NOT_RAIDED_NO_POLICY: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+PARITY: dirs: 0 files:0 blocks:0 bytes:0 logical:0
+
+2016-03-31 15:26:34,450 INFO org.apache.hadoop.raid.StatisticsCollector: Finishing collecting statistics.
+2016-03-31 15:26:39,828 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:26:39,842 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:26:39,842 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:26:39,926 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:26:39,926 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:26:39,948 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:26:39,949 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:26:39,949 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:26:39,956 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:26:39,956 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:26:49,829 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:26:49,843 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:26:49,843 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:26:49,957 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:26:49,957 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:26:49,989 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:26:49,991 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:26:49,991 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:26:50,028 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:26:50,028 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:26:59,832 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:26:59,843 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:26:59,844 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:27:00,030 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:27:00,030 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:27:00,040 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:27:00,041 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:27:00,041 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:27:00,051 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:27:00,051 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:27:09,833 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:27:09,845 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:27:09,845 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:27:10,052 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:27:10,052 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:27:10,066 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:27:10,068 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:27:10,068 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:27:10,081 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:27:10,081 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:27:19,835 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:27:19,845 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:27:19,845 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:27:20,082 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:27:20,083 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:27:20,107 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:27:20,111 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:27:20,111 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:27:20,139 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:27:20,139 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:27:29,836 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:27:29,847 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:27:29,847 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:27:30,140 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:27:30,140 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:27:30,151 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:27:30,152 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:27:30,152 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:27:30,160 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:27:30,160 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:27:39,837 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:27:39,847 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:27:39,847 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:27:40,163 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:27:40,163 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:27:40,178 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:27:40,179 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:27:40,179 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:27:40,196 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:27:40,196 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:27:49,838 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:27:49,847 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:27:49,847 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:27:50,196 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:27:50,197 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:27:50,224 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:27:50,229 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:27:50,229 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:27:50,238 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:27:50,239 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:27:59,838 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:27:59,848 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:27:59,848 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:28:00,240 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:28:00,240 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:28:00,281 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:28:00,282 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:28:00,282 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:28:00,298 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:28:00,298 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:28:09,839 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:28:09,849 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:28:09,849 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:28:10,300 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:28:10,300 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:28:10,309 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:28:10,310 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:28:10,310 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:28:10,315 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:28:10,315 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:28:19,841 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:28:19,850 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:28:19,850 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:28:20,316 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:28:20,316 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:28:20,322 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:28:20,322 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:28:20,323 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:28:20,340 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:28:20,340 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:28:29,841 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:28:29,851 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:28:29,851 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:28:30,341 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:28:30,341 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:28:30,366 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:28:30,367 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:28:30,367 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:28:30,378 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:28:30,378 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:28:39,842 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:28:39,851 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:28:39,851 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:28:40,378 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:28:40,378 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:28:40,385 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:28:40,387 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:28:40,387 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:28:40,391 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:28:40,391 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:28:49,843 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:28:49,852 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:28:49,852 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:28:50,392 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:28:50,392 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:28:50,405 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:28:50,409 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:28:50,409 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:28:50,415 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:28:50,415 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:28:59,862 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:28:59,862 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:28:59,863 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:29:00,415 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:29:00,415 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:29:00,422 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:29:00,426 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:29:00,426 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:29:00,433 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:29:00,433 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:29:09,862 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:29:09,862 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:29:09,863 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:29:10,434 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:29:10,434 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:29:10,439 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:29:10,440 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:29:10,440 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:29:10,456 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:29:10,456 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:29:19,863 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:29:19,863 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:29:19,864 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:29:20,457 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:29:20,457 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:29:20,463 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:29:20,464 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:29:20,465 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:29:20,475 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:29:20,475 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:29:29,863 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:29:29,863 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:29:29,864 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:29:30,475 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:29:30,475 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:29:30,486 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:29:30,487 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:29:30,488 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:29:30,492 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:29:30,492 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:29:39,863 INFO org.apache.hadoop.raid.RaidNode: Start process UnderRedundantFiles
+2016-03-31 15:29:39,863 INFO org.apache.hadoop.raid.RaidNode: Update UnderRedundantFiles Metrics
+2016-03-31 15:29:39,865 INFO org.apache.hadoop.raid.RaidNode: raidflag=false,sleep the thread
+2016-03-31 15:29:40,493 INFO org.apache.hadoop.raid.PurgeMonitor: Check directory for codec: xor, directory: /raid
+2016-03-31 15:29:40,494 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:29:40,506 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:29:40,515 INFO org.apache.hadoop.raid.PurgeMonitor: Purging obsolete parity files for /raid
+2016-03-31 15:29:40,515 INFO org.apache.hadoop.raid.DirectoryTraversal: Starting with directories:[/raid] numThreads:4
+2016-03-31 15:29:40,536 INFO org.apache.hadoop.raid.DirectoryTraversal: traversal is done. Returning FINISH_TOKEN
+2016-03-31 15:29:40,536 INFO org.apache.hadoop.raid.PlacementMonitor: Reporting metrices:
+xor Blocks
+
+xor Blocks
+
+2016-03-31 15:29:41,911 INFO org.apache.hadoop.raid.RaidNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down RaidNode at Master.Hadoop/192.168.216.137
+************************************************************/

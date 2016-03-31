@@ -1,0 +1,209 @@
+stripelength=10
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/hadoop/hadoop-20/lib/slf4j-log4j12-1.6.1-hadoop.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/hadoop/hadoop-20/build/ivy/lib/Hadoop/common/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==1,chooserandom1
+chooserandom in default
+rack=/rack2
+rack=/rack1
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==2,chooserandom
+chooserandom in default
+chooserandom in default
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==3,chooserandom
+chooserandom in default
+chooserandom in default
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==4,chooserandom
+chooserandom in default
+chooserandom in default
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==5,chooserandom
+chooserandom in default
+chooserandom in default
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==6,chooserandom
+chooserandom in default
+chooserandom in default
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==7,chooserandom
+chooserandom in default
+chooserandom in default
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==8,chooserandom
+chooserandom in default
+chooserandom in default
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==9,chooserandom
+chooserandom in default
+chooserandom in default
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==10,chooserandom
+chooserandom in default
+chooserandom in default
+flag=10
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==1,chooserandom1
+chooserandom in default
+rack=/rack1
+rack=/rack3
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==2,chooserandom
+chooserandom in default
+chooserandom in default
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==3,chooserandom
+chooserandom in default
+chooserandom in default
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==4,chooserandom
+chooserandom in default
+chooserandom in default
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==5,chooserandom
+chooserandom in default
+chooserandom in default
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==6,chooserandom
+chooserandom in default
+chooserandom in default
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==7,chooserandom
+chooserandom in default
+chooserandom in default
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==8,chooserandom
+chooserandom in default
+chooserandom in default
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==9,chooserandom
+chooserandom in default
+chooserandom in default
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+fileType=NOT_RAID
+flag==10,chooserandom
+chooserandom in default
+chooserandom in default
+flag=10

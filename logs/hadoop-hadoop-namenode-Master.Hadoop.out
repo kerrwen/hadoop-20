@@ -1,0 +1,413 @@
+stripelength=5
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/hadoop/hadoop-20/lib/slf4j-log4j12-1.6.1-hadoop.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/hadoop/hadoop-20/build/ivy/lib/Hadoop/common/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+choosetargetdefault
+finalizetargets
+choosetargetdefault
+finalizetargets
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+raid=true
+info.type=TEMP_PARITY
+error happened when choosing datanode to write:java.util.NoSuchElementException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1431)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1453)
+	at org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid.chooseTarget(BlockPlacementPolicyRaid.java:255)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.computeTargets(FSNamesystem.java:2599)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:2782)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1049)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1027)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockAndFetchMetaInfo(NameNode.java:1020)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:822)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1216)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1212)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.ipc.Server.processCall(Server.java:1211)
+	at org.apache.hadoop.ipc.Server.access$3000(Server.java:85)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1287)
+
+choosetargetdefault
+chooserandom in default
+finalizetargets
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+raid=true
+info.type=TEMP_PARITY
+error happened when choosing datanode to write:java.util.NoSuchElementException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1431)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1453)
+	at org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid.chooseTarget(BlockPlacementPolicyRaid.java:255)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.computeTargets(FSNamesystem.java:2599)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:2782)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1049)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1027)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockAndFetchMetaInfo(NameNode.java:1020)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:822)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1216)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1212)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.ipc.Server.processCall(Server.java:1211)
+	at org.apache.hadoop.ipc.Server.access$3000(Server.java:85)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1287)
+
+choosetargetdefault
+chooserandom in default
+finalizetargets
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+raid=true
+info.type=TEMP_PARITY
+error happened when choosing datanode to write:java.util.NoSuchElementException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1431)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1453)
+	at org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid.chooseTarget(BlockPlacementPolicyRaid.java:255)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.computeTargets(FSNamesystem.java:2599)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:2782)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1049)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1027)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockAndFetchMetaInfo(NameNode.java:1020)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:822)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1216)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1212)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.ipc.Server.processCall(Server.java:1211)
+	at org.apache.hadoop.ipc.Server.access$3000(Server.java:85)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1287)
+
+choosetargetdefault
+chooserandom in default
+finalizetargets
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+raid=true
+fileType=NOT_RAID
+flag==4,chooserandom
+error happened when choosing datanode to write:java.util.NoSuchElementException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1431)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1453)
+	at org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid.chooseTarget(BlockPlacementPolicyRaid.java:230)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.computeTargets(FSNamesystem.java:2599)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:2782)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1049)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1027)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockAndFetchMetaInfo(NameNode.java:1020)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:822)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1216)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1212)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.ipc.Server.processCall(Server.java:1211)
+	at org.apache.hadoop.ipc.Server.access$3000(Server.java:85)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1287)
+
+choosetargetdefault
+chooserandom in default
+finalizetargets
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+raid=true
+info.type=TEMP_PARITY
+error happened when choosing datanode to write:java.util.NoSuchElementException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1431)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1453)
+	at org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid.chooseTarget(BlockPlacementPolicyRaid.java:255)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.computeTargets(FSNamesystem.java:2599)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:2782)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1049)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1027)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockAndFetchMetaInfo(NameNode.java:1020)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:822)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1216)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1212)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.ipc.Server.processCall(Server.java:1211)
+	at org.apache.hadoop.ipc.Server.access$3000(Server.java:85)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1287)
+
+choosetargetdefault
+chooserandom in default
+finalizetargets
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+raid=true
+fileType=NOT_RAID
+flag==6,chooserandom
+error happened when choosing datanode to write:java.util.NoSuchElementException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1431)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1453)
+	at org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid.chooseTarget(BlockPlacementPolicyRaid.java:230)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.computeTargets(FSNamesystem.java:2599)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:2782)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1049)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1027)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockAndFetchMetaInfo(NameNode.java:1020)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:822)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1216)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1212)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.ipc.Server.processCall(Server.java:1211)
+	at org.apache.hadoop.ipc.Server.access$3000(Server.java:85)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1287)
+
+choosetargetdefault
+chooserandom in default
+finalizetargets
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+raid=true
+fileType=NOT_RAID
+flag==7,chooserandom
+error happened when choosing datanode to write:java.util.NoSuchElementException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1431)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1453)
+	at org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid.chooseTarget(BlockPlacementPolicyRaid.java:230)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.computeTargets(FSNamesystem.java:2599)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:2782)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1049)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1027)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockAndFetchMetaInfo(NameNode.java:1020)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:822)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1216)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1212)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.ipc.Server.processCall(Server.java:1211)
+	at org.apache.hadoop.ipc.Server.access$3000(Server.java:85)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1287)
+
+choosetargetdefault
+chooserandom in default
+finalizetargets
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+raid=true
+fileType=NOT_RAID
+flag==8,chooserandom
+error happened when choosing datanode to write:java.util.NoSuchElementException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1431)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1453)
+	at org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid.chooseTarget(BlockPlacementPolicyRaid.java:230)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.computeTargets(FSNamesystem.java:2599)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:2782)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1049)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1027)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockAndFetchMetaInfo(NameNode.java:1020)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:822)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1216)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1212)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.ipc.Server.processCall(Server.java:1211)
+	at org.apache.hadoop.ipc.Server.access$3000(Server.java:85)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1287)
+
+choosetargetdefault
+chooserandom in default
+finalizetargets
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+raid=true
+fileType=NOT_RAID
+flag==9,chooserandom
+error happened when choosing datanode to write:java.util.NoSuchElementException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1431)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1453)
+	at org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid.chooseTarget(BlockPlacementPolicyRaid.java:230)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.computeTargets(FSNamesystem.java:2599)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:2782)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1049)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1027)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockAndFetchMetaInfo(NameNode.java:1020)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:822)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1216)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1212)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.ipc.Server.processCall(Server.java:1211)
+	at org.apache.hadoop.ipc.Server.access$3000(Server.java:85)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1287)
+
+choosetargetdefault
+chooserandom in default
+finalizetargets
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+raid=true
+fileType=NOT_RAID
+flag==10,chooserandom
+error happened when choosing datanode to write:java.util.NoSuchElementException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1431)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1453)
+	at org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid.chooseTarget(BlockPlacementPolicyRaid.java:230)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.computeTargets(FSNamesystem.java:2599)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:2782)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1049)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1027)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockAndFetchMetaInfo(NameNode.java:1020)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:822)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1216)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1212)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.ipc.Server.processCall(Server.java:1211)
+	at org.apache.hadoop.ipc.Server.access$3000(Server.java:85)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1287)
+
+choosetargetdefault
+chooserandom in default
+finalizetargets
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+raid=true
+fileType=NOT_RAID
+flag==11,chooserandom
+error happened when choosing datanode to write:java.util.NoSuchElementException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1431)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1453)
+	at org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid.chooseTarget(BlockPlacementPolicyRaid.java:230)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.computeTargets(FSNamesystem.java:2599)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:2782)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1049)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1027)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockAndFetchMetaInfo(NameNode.java:1020)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:822)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1216)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1212)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.ipc.Server.processCall(Server.java:1211)
+	at org.apache.hadoop.ipc.Server.access$3000(Server.java:85)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1287)
+
+choosetargetdefault
+chooserandom in default
+finalizetargets
+****addblock****
+*************getadditonalblock*****************
+computetargets
+org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid
+**********************
+choosetarget+raid
+raid=true
+fileType=NOT_RAID
+flag==12,chooserandom
+error happened when choosing datanode to write:java.util.NoSuchElementException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1431)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1453)
+	at org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyRaid.chooseTarget(BlockPlacementPolicyRaid.java:230)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.computeTargets(FSNamesystem.java:2599)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:2782)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1049)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockInternal(NameNode.java:1027)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.addBlockAndFetchMetaInfo(NameNode.java:1020)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:822)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1216)
+	at org.apache.hadoop.ipc.Server$1.run(Server.java:1212)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.ipc.Server.processCall(Server.java:1211)
+	at org.apache.hadoop.ipc.Server.access$3000(Server.java:85)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1287)
+
+choosetargetdefault
+chooserandom in default
+finalizetargets

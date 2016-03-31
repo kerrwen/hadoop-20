@@ -1,0 +1,72 @@
+2016-03-31 14:50:47,859 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = Master.Hadoop/192.168.216.137
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20
+STARTUP_MSG:   build =  -r ; compiled by 'hadoop' on Thu Mar 31 14:42:44 CST 2016
+************************************************************/
+2016-03-31 14:50:48,602 INFO org.apache.hadoop.mapred.JobTracker: Starting jobtracker with owner as hadoop and supergroup as supergroup
+2016-03-31 14:50:48,608 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2016-03-31 14:50:48,619 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2016-03-31 14:50:48,806 WARN org.apache.hadoop.mapred.JobTracker: Resource reporter is not configured. It will be disabled.
+2016-03-31 14:50:48,899 FATAL org.apache.hadoop.mapred.JobTracker: java.net.BindException: Problem binding to Master.Hadoop/192.168.216.137:9001 : Address already in use
+	at org.apache.hadoop.ipc.Server.bind(Server.java:301)
+	at org.apache.hadoop.ipc.Server$Listener.<init>(Server.java:388)
+	at org.apache.hadoop.ipc.Server.<init>(Server.java:1374)
+	at org.apache.hadoop.ipc.RPC$Server.<init>(RPC.java:792)
+	at org.apache.hadoop.ipc.RPC.getServer(RPC.java:737)
+	at org.apache.hadoop.ipc.RPC.getServer(RPC.java:727)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1423)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:251)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:243)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3960)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.hadoop.ipc.Server.bind(Server.java:298)
+	... 9 more
+
+2016-03-31 14:50:48,900 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at Master.Hadoop/192.168.216.137
+************************************************************/
+2016-03-31 15:26:01,710 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = Master.Hadoop/192.168.216.137
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20
+STARTUP_MSG:   build =  -r ; compiled by 'hadoop' on Thu Mar 31 14:42:44 CST 2016
+************************************************************/
+2016-03-31 15:26:02,233 INFO org.apache.hadoop.mapred.JobTracker: Starting jobtracker with owner as hadoop and supergroup as supergroup
+2016-03-31 15:26:02,240 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2016-03-31 15:26:02,244 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2016-03-31 15:26:02,418 WARN org.apache.hadoop.mapred.JobTracker: Resource reporter is not configured. It will be disabled.
+2016-03-31 15:26:02,483 FATAL org.apache.hadoop.mapred.JobTracker: java.net.BindException: Problem binding to Master.Hadoop/192.168.216.137:9001 : Address already in use
+	at org.apache.hadoop.ipc.Server.bind(Server.java:301)
+	at org.apache.hadoop.ipc.Server$Listener.<init>(Server.java:388)
+	at org.apache.hadoop.ipc.Server.<init>(Server.java:1374)
+	at org.apache.hadoop.ipc.RPC$Server.<init>(RPC.java:792)
+	at org.apache.hadoop.ipc.RPC.getServer(RPC.java:737)
+	at org.apache.hadoop.ipc.RPC.getServer(RPC.java:727)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1423)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:251)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:243)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3960)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.hadoop.ipc.Server.bind(Server.java:298)
+	... 9 more
+
+2016-03-31 15:26:02,484 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at Master.Hadoop/192.168.216.137
+************************************************************/
